@@ -11,6 +11,13 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        grey: {
+          DEFAULT: "#D9D9D9",
+          10: "#818589"
+        },
+        teal: {
+          DEFAULT: "#7DF9FF"
+        },
       },
     },
   },
