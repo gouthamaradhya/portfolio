@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en" className="w-full">
       <head>
         <link rel="icon" href="/images/logo-black.svg" />
-        <title>Goutham's Portfolio</title>
+        <title>Goutham Portfolio</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-full`}
