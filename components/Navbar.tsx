@@ -18,7 +18,7 @@ const Navbar = () => {
         <>
 
             <div className="fixed bg-black w-full flex justify-between items-center shadow-sm shadow-grey">
-                <Image src="/images/logo-white.svg" alt="logo" width={75} height={56} className="sm:ml-5" />
+                <Image src="/images/logo-white.svg" alt="logo" width={75} height={56} className="sm:ml-5" draggable="false" />
                 <div className="sm:hidden mr-5">
                     <DropdownMenu>
                         <DropdownMenuTrigger>
@@ -38,7 +38,7 @@ const Navbar = () => {
 
 
                 <div className={`hidden sm:flex gap-14 mr-10 text-xl ${roboto_cond.className} text-white`}>
-                    <a>About Me</a>
+                    <a href="#about">About Me</a>
                     <a>Skills</a>
                     <a>Projects</a>
                     <a>Contact</a>

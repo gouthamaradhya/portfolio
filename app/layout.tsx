@@ -27,7 +27,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="w-full">
+      <head>
+        <link rel="icon" href="/images/logo-black.svg" />
+        <title>Goutham's Portfolio</title>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-full`}
       >
