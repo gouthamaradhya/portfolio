@@ -8,7 +8,7 @@ import { Button } from "./ui/button";
 const Hero = () => {
     return (
         <>
-            <div className="w-full sm:h-screen sm:snap-start ">
+            <div className="w-full sm:h-screen sm:snap-start" id="home">
                 <div className="h-full">
                     <div className="sm:flex flex-row-reverse justify-between items-center pt-36">
                         <div className="flex justify-center sm:w-fit sm:mr-28">

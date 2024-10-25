@@ -15,8 +15,10 @@ const Navbar = () => {
     return (
         <>
 
-            <div className="fixed bg-black w-full flex justify-between items-center shadow-sm shadow-grey">
-                <Image src="/images/logo-white.svg" alt="logo" width={75} height={56} className="sm:ml-5" draggable="false" />
+            <div className="fixed bg-black w-full flex justify-between items-center shadow-sm shadow-grey z-40">
+                <a href="#home">
+                    <Image src="/images/logo-white.svg" alt="logo" width={75} height={56} className="sm:ml-5" draggable="false" />
+                </a>
                 <div className="sm:hidden mr-5">
                     <DropdownMenu>
                         <DropdownMenuTrigger>
@@ -25,21 +27,21 @@ const Navbar = () => {
                             </div>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="bg-black text-white mr-3 sm:hidden">
-                            <DropdownMenuItem>Home</DropdownMenuItem>
-                            <DropdownMenuItem>About Me</DropdownMenuItem>
-                            <DropdownMenuItem>Skills</DropdownMenuItem>
-                            <DropdownMenuItem>Projects</DropdownMenuItem>
-                            <DropdownMenuItem>Contact</DropdownMenuItem>
+                            <a href="#home"><DropdownMenuItem>Home</DropdownMenuItem></a>
+                            <a href="#about"><DropdownMenuItem>About Me</DropdownMenuItem></a>
+                            <a href="#skills"><DropdownMenuItem>Skills</DropdownMenuItem></a>
+                            <a href="#projects"><DropdownMenuItem>Projects</DropdownMenuItem></a>
+                            <a href="#contact"><DropdownMenuItem>Contact</DropdownMenuItem></a>
                         </DropdownMenuContent>
                     </DropdownMenu>
                 </div>
 
 
                 <div className={`hidden sm:flex gap-14 mr-10 text-xl ${roboto_cond.className} text-white`}>
-                    <a href="#about">About Me</a>
-                    <a>Skills</a>
-                    <a>Projects</a>
-                    <a>Contact</a>
+                    <a href="#about" className="hover:text-teal hover:scale-105">About Me</a>
+                    <a href="#skills" className="hover:text-teal hover:scale-105">Skills</a>
+                    <a href="#projects" className="hover:text-teal hover:scale-105">Projects</a>
+                    <a href="#contact" className="hover:text-teal hover:scale-105">Contact</a>
                 </div>
             </div>
 

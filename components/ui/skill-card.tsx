@@ -12,9 +12,15 @@ interface SkillCardProps {
 const SkillCard: React.FC<SkillCardProps> = ({ logo, description, width, height }) => {
     return (
         <>
-            <div className="w-52 h-16 bg-grey-20 flex justify-around items-center rounded-sm">
-                <Image src={logo} alt={description} width={width} height={height} />
-                <p className={`${roboto_cond.className} text-white text-xl`}>{description}</p>
+            <div className="hover:scale-125 transform transition duration-200 will-change-transform">
+                <div className="flex justify-center items-center">
+                    <div className="w-24 h-20 flex justify-center items-center">
+                        <Image src={logo} alt={description} width={width} height={height} draggable="false" />
+                    </div>
+                </div>
+                <div className="flex justify-center">
+                    <p className={`${roboto_cond.className} text-white text-xl`}>{description}</p>
+                </div>
             </div>
         </>
     )

@@ -105,3 +105,11 @@ html, body{
   border: 3px solid #121212;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.scrollnone > .scroll-container::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar in WebKit-based browsers */
+}
+  

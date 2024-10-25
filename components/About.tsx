@@ -6,7 +6,7 @@ import { roboto_cond } from "@/app/fonts";
 const About = () => {
     return (
         <>
-            <div className="sm:h-screen sm:snap-start  w-full " id="about">
+            <div className="w-full " id="about">
                 <div className="flex pt-20 justify-center">
                     <h1 className={`text-4xl text-white ${archivo_black.className}`}>About Me</h1>
                 </div>
