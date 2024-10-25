@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, image1, image
                             <p className={`${roboto_cond.className} text-xl text-grey-10`}>Made with:</p>
                             <div className="flex justify-around gap-5 ml-5 items-center">
                                 {images.map((image, index) => (
-                                    <Image src={image!} alt={`image+${index + 1}`} height={40} width={30} />
+                                    <Image key={index} src={image!} alt={`image+${index + 1}`} height={40} width={30} />
                                 ))}
                             </div>
                         </div>
